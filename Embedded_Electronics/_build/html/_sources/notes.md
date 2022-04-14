@@ -1,4 +1,0 @@
-- To publish new content:
-  - 1. Re-build the Jupyter book (assuming you are in the top level of the repo dir):
-    - jb build Embedded_Electronics
-  - 2. ghp-import -n -p -f Embedded_Electronics_build/html
