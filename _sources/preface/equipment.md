@@ -3,7 +3,7 @@ Minimal physical equipment is needed for this class
 
 - Laptop
   - Fedora Linux preferred
-- EspoTek Labrador Board
+- [EspoTek Labrador Board](https://espotek.com/labrador/product/espotek-labrador-board/)
   - All-in-One electronics lab equipment board
 - Basic Electronics Kit
   - Adafruit's [Electronics Kit for Programming the Pico by Simon Monk](https://www.adafruit.com/product/5321) will work.  Anything similar to this will be fine
