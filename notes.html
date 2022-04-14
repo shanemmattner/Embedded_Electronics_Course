@@ -160,7 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/ideas.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/notes.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -180,7 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fideas.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotes.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -235,10 +235,30 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <p>List of ideas for this class:</p>
+  <ul>
+<li><p>To publish new content:</p>
+<ul>
+<li><ol class="simple">
+<li><p>Re-build the Jupyter book (assuming you are in the top level of the repo dir):</p></li>
+</ol>
 <ul class="simple">
-<li><p>TOF sensor as a novel “button” or input</p></li>
-<li></li>
+<li><p>jb build Embedded_Electronics</p></li>
+</ul>
+</li>
+<li><ol class="simple">
+<li><p>Put changes in HTML files to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</p></li>
+</ol>
+<ul class="simple">
+<li><p>ghp-import -n -p -f Embedded_Electronics_build/html</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Jupyter Book doc</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/start/overview.html">https://jupyterbook.org/start/overview.html</a></p></li>
+</ul>
+</li>
 </ul>
 
     <script type="text/x-thebe-config">
