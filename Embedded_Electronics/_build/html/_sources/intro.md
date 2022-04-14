@@ -1,4 +1,4 @@
-# Intro
+# Intro to Embedded Electronics
 
 I love the world of electronics and embedded systems.  This book is my attempt to write down all the lessons I've learned both for myself and to pass on the incredible knowledge I have been gifted.
 
