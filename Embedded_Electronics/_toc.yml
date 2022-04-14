@@ -4,10 +4,7 @@
 format: jb-book
 root: intro
 parts:
-- caption: About
-  chapters:
+- chapters:
   - file: preface/about
-- caption: Equipment
-  chapters:
   - file: preface/equipment
 
