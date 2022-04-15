@@ -1,6 +1,6 @@
 # Basic Circuits
 
-The foundation of electronics is `circuits` which are just <ins>**a bunch of electronics parts connected with wires**</ins>.
+The foundation of electronics is `circuits` which are <ins>**just a bunch of electronics parts connected with wires**</ins>.
 
 Let's look at one of the most basic circuits in electronics:  **LED circuit**.  This circuit has **3** electronic parts:
 - `LED`: emits light when electricity is applied <br/>
@@ -9,3 +9,4 @@ Let's look at one of the most basic circuits in electronics:  **LED circuit**.  
 ![battery](../images/ch01_battery.png)
 - `Resistor`: limits the amount of electricity that can flow <br/>
 ![resistor](../images/ch01_resistor.png)
+
