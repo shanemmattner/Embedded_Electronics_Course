@@ -1,6 +1,6 @@
 # About
 
-I love teaching and I love embedded electronics.
+This class is designed to teach someone that knows nothing about electronics to build their own circuit boards and become proficient and programming micro-controllers.  
 
 ## Who am I?
 
