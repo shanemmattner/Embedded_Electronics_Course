@@ -1,3 +1,4 @@
+# Notes
 - To publish new content:
   - 1. Re-build the Jupyter book (assuming you are in the top level of the repo dir):
     - jb build Embedded_Electronics

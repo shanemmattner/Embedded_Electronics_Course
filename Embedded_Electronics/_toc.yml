@@ -7,4 +7,7 @@ parts:
 - chapters:
   - file: preface/about
   - file: preface/equipment
+- chapters:
+  - file: extra/ideas
+  - file: extra/notes
 
