@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipment &#8212; Embedded Electronics</title>
+    <title>Notes &#8212; Embedded Electronics</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Ideas for this class:" href="../extra/ideas.html" />
-    <link rel="prev" title="About" href="about.html" />
+    <link rel="prev" title="Ideas for this class:" href="ideas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -98,26 +97,26 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="about.html">
+  <a class="reference internal" href="../preface/about.html">
    About
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/equipment.html">
    Equipment
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../extra/ideas.html">
+  <a class="reference internal" href="ideas.html">
    Ideas for this class:
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../extra/notes.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Notes
   </a>
  </li>
@@ -162,7 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/preface/equipment.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/extra/notes.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -182,7 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpreface/equipment.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fextra/notes.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -210,7 +209,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Equipment</h1>
+                <h1>Notes</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -221,31 +220,33 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="equipment">
-<h1>Equipment<a class="headerlink" href="#equipment" title="Permalink to this headline">¶</a></h1>
-<p>Minimal physical equipment is needed for this class</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="notes">
+<h1>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p>To publish new content:</p>
+<ul>
+<li><ol class="simple">
+<li><p>Re-build the Jupyter book (assuming you are in the top level of the repo dir):</p></li>
+</ol>
 <ul class="simple">
-<li><p>Laptop</p>
-<ul>
-<li><p>Fedora Linux preferred</p></li>
+<li><p>jb build Embedded_Electronics</p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://espotek.com/labrador/product/espotek-labrador-board/">EspoTek Labrador Board</a></p>
-<ul>
-<li><p>All-in-One electronics lab equipment board</p></li>
+<li><ol class="simple">
+<li><p>Put changes in HTML files to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</p></li>
+</ol>
+<ul class="simple">
+<li><p>ghp-import -n -p -f Embedded_Electronics/_build/html</p></li>
 </ul>
 </li>
-<li><p>Basic Electronics Kit</p>
-<ul>
-<li><p>Adafruit’s <a class="reference external" href="https://www.adafruit.com/product/5321">Electronics Kit for Programming the Pico by Simon Monk</a> will work.  Anything similar to this will be fine</p></li>
 </ul>
 </li>
-<li><p>ESP32-DevKitC</p>
-<ul>
-<li><p><a class="reference external" href="https://www.espressif.com/en/products/devkits/esp32-devkitc">https://www.espressif.com/en/products/devkits/esp32-devkitc</a></p></li>
+<li><p>Jupyter Book doc</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/start/overview.html">https://jupyterbook.org/start/overview.html</a></p></li>
 </ul>
 </li>
-<li></li>
+<li><p>Every document needs a title</p></li>
 </ul>
 </div>
 
@@ -262,7 +263,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./preface"
+            path: "./extra"
         },
         predefinedOutput: true
     }
@@ -274,19 +275,12 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="about.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="ideas.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">About</p>
+            <p class="prev-next-title">Ideas for this class:</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../extra/ideas.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ideas for this class:</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
