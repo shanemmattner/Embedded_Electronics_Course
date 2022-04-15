@@ -7,3 +7,5 @@
 - Use [Fritzing](https://fritzing.org/learning/tutorials/building-circuit) to make clean circuits on breadboards that students can follow
 - Paper cutout that labels the pins of the dev board like this:
   - ![dev_board_cutout](dev_board_overlay.png)
+- Add hover-over vocab words with:
+  - **<abbr title="hover-text">text</abbr>**
