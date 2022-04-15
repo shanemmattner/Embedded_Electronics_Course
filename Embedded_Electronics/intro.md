@@ -12,7 +12,3 @@ Then we'll learn about the basics of programming and what an **embedded system**
 
 After we have a working embedded system we'll try to make that system useful by putting some sensors on it.  We'll measure the temperature and humidity.  We can measure how far our hand is from the circuit board.
 
-
-
-```{tableofcontents}
-```
