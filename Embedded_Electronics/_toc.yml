@@ -8,6 +8,9 @@ parts:
   - file: preface/about
   - file: preface/equipment
 - chapters:
+  - file: chapter_01/basic_circuits
+- chapters:
   - file: extra/ideas
   - file: extra/notes
+
 
