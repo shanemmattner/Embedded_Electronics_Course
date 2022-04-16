@@ -9,3 +9,6 @@
   - ![dev_board_cutout](dev_board_overlay.png)
 - Add hover-over vocab words with:
   - **<abbr title="hover-text">text</abbr>**
+- Use ESP32 touch sensor pins as buttons
+  - Pretty cool 
+- Flash cards using Anki-droid
