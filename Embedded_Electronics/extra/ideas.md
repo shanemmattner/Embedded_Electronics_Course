@@ -12,3 +12,12 @@
 - Use ESP32 touch sensor pins as buttons
   - Pretty cool 
 - Flash cards using Anki-droid
+
+
+
+- We should do a bunch of mini classes
+  - 1. Basics of electronics, embedded, projects, state machines, and data
+    - Potentiometer lock board with "magic" dimming LED based on TOF sensor
+  - 2. Class 2
+    - Start logging data in FLASH memory
+      - When button presses happen
