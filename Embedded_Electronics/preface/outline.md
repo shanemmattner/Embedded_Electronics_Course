@@ -83,14 +83,7 @@
 - Let's save the code we've been developing
   - 11.1 Introduction to version control and GIT
   - 11.2 Create a repository and upload to Github
-- We'd also like the user to have an option to input the code on a key-pad
-  - PCB is already being fabricated though so we have to find another solution
-  - 12.1 Intro to capacitive touch buttons
-    - Include a little more lesson on capacitors and time constants?
-  - 12.2 Impement solution with polling
-  - 12.3 Introduction to interrupts?
-  - From this point we should give the students the option to use capacitive buttons or physical buttons in their projects
-    - Good way to introduce the concept of design decisions
+
 - Documenting the design
   - 13.1 Introduction to draw.io for documenting firmware
   - 13.2 Intro to Google Slides
@@ -114,7 +107,16 @@
 - 
 
 
-- 
+
+
+- We'd also like the user to have an option to input the code on a key-pad
+  - PCB is already being fabricated though so we have to find another solution
+  - 12.1 Intro to capacitive touch buttons
+    - Include a little more lesson on capacitors and time constants?
+  - 12.2 Impement solution with polling
+  - 12.3 Introduction to interrupts?
+  - From this point we should give the students the option to use capacitive buttons or physical buttons in their projects
+    - Good way to introduce the concept of design decisions
 - Develop situation where series/parallel resistor circuits are needed
   - parallel:
   - series: 
