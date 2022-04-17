@@ -7,8 +7,6 @@
   - 1.2 LED circuit w/ potentiometer
     - Introduction to pot. and changing values
     - Notice how below a certain level the LED cuts out
-  - 1.3 Connect scope and look at pot. output
-    - First into to scope
 - Basic programming
   - 2.1 Blinky with micro-python
     - Explain GPIO and time

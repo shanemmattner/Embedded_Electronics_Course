@@ -1,4 +1,4 @@
-# Basic Circuits
+# First circuit: LED's
 
 The foundation of electronics is `circuits` which are <ins>**just a bunch of electronics parts connected with wires**</ins>.
 
@@ -32,7 +32,14 @@ Finally, attach jumper wires.  After placing all the wires you should see the LE
 
 Congratulations on making your first circuit!  
 
-Now let's do a little experiment and replace the resistor. Take out this resistor from your parts:
+Now let's do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
+**HIDDEN TAB that student clicks on after doing experiment**
+LED's are part of a family of electronic parts called `diodes` which only allow electricity to flow in one direction.  They will be very useful for various applications.
+**TODO** picture of LED off
+
+
+
+Let's try another experiemnt and replace the resistor. Take out this resistor from your parts:
 **TODO** picture of new resistor
 
 Replace the resistor in the breadboard with the new one.  It doesn't matter which wire leg goes where:

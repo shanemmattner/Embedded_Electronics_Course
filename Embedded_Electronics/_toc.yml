@@ -11,7 +11,8 @@ parts:
   - file: preface/outline
 - caption: Chapter 1
   chapters:
-  - file: chapter_01/01_basic_circuits
+  - file: chapter_01/01_LED_circuit
+  - file: chapter_01/02_LED_circuit_pot
 - caption: Chapter Extras
   chapters:
   - file: extra/ideas
