@@ -3,7 +3,7 @@
 The foundation of electronics is `circuits` which are <ins>**just a bunch of electronics parts connected with wires**</ins>.
 
 Let's look at one of the most basic circuits in electronics:  **LED circuit**.  This circuit has **3** electronic parts:
-- `LED`: emits light when electricity is applied <br/>
+- `LED`: emits light when electricity flows through it <br/>
 ![led](../images/ch01_led.png)
 - `Voltage supply`:  source of electricity, like a battery</br>
 ![battery](../images/ch01_battery.png)
@@ -46,3 +46,6 @@ Replace the resistor in the breadboard with the new one.  It doesn't matter whic
 **TODO** picture of complete circuit
 
 Notice how the brightness of the LED changes when we replace the resistor.  That's because the resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more **<abbr title="Opposing the flow of electricity">resistance</abbr>**
+
+
+#led #voltage_supply #resistor #
