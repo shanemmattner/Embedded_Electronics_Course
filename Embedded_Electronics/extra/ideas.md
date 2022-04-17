@@ -19,3 +19,5 @@
   - 2. Class 2
     - Start logging data in FLASH memory
       - When button presses happen
+- Package electronics seperately for all the labs
+  - Super tedious to look through resistors for the right one

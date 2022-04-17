@@ -6,6 +6,7 @@
     - Introduction to resistors
   - 1.2 LED circuit w/ potentiometer
     - Introduction to pot. and changing values
+    - Use oscilloscope for the first time
     - Notice how below a certain level the LED cuts out
 - Basic programming
   - 2.1 Blinky with micro-python

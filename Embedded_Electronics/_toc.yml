@@ -13,6 +13,7 @@ parts:
   chapters:
   - file: chapter_01/01_LED_circuit
   - file: chapter_01/02_LED_circuit_pot
+  - file: chapter_01/03_ESP32_heartbeat
 - caption: Chapter Extras
   chapters:
   - file: extra/ideas
