@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Basic Circuits" href="../chapter_01/basic_circuits.html" />
+    <link rel="next" title="LED Circuit Cont." href="../chapter_01/02_LED_circuit_pot.html" />
     <link rel="prev" title="Equipment" href="equipment.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -127,8 +127,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../chapter_01/basic_circuits.html">
-   Basic Circuits
+  <a class="reference internal" href="../chapter_01/02_LED_circuit_pot.html">
+   LED Circuit Cont.
   </a>
  </li>
 </ul>
@@ -230,19 +230,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#led-circuit-w-button">
-   1.3 LED circuit w/ button
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -255,19 +242,6 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#led-circuit-w-button">
-   1.3 LED circuit w/ button
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -276,9 +250,9 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="outline">
 <h1>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p>Basic circuit</p>
 <ul>
+<li><p>Basic circuit</p>
+<ul class="simple">
 <li><p>1.1 LED circuit</p>
 <ul>
 <li><p>Use different resistors to show brightness and demonstrate how resistance affects current</p></li>
@@ -288,13 +262,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>1.2 LED circuit w/ potentiometer</p>
 <ul>
 <li><p>Introduction to pot. and changing values</p></li>
+<li><p>Notice how below a certain level the LED cuts out</p></li>
 </ul>
 </li>
-<li></li>
 </ul>
 </li>
 <li><p>Basic programming</p>
-<ul>
+<ul class="simple">
 <li><p>2.1 Blinky with micro-python</p>
 <ul>
 <li><p>Explain GPIO and time</p></li>
@@ -308,16 +282,267 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>2.3 ADC on LED circuit w/ potentiometer</p>
 <ul>
 <li><p>Monitor voltage out of potentiometer</p></li>
-<li><p>Notice how below a certain level the LED cuts out</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>More electronics</p>
+<ul class="simple">
+<li><p>3.1 LED circuit + button show bounce of signal</p>
+<ul>
+<li><p>Talk about noise when things turn on and off</p></li>
+</ul>
+</li>
+<li><p>3.2 Add capacitor to circuit</p>
+<ul>
+<li><p>Show how capacitor changes results on the scope</p></li>
+</ul>
+</li>
+<li><p>3.3 Change capacitor to demonstrate the time constant chane</p></li>
+</ul>
+</li>
+<li><p>Programming IO</p>
+<ul class="simple">
+<li><p>4.1 Make simple program</p>
+<ul>
+<li><p>User button press toggles LED on/off</p></li>
+</ul>
+</li>
+<li><p>4.2 Remove capacitor and demonstrate how LED changes to unexpected state</p></li>
+<li><p>4.3 Create basic digital debounce filter</p></li>
+<li><p>4.4 Compare digital vs hardware filter</p>
+<ul>
+<li><p>Talk about how adding hardware components adds cost, complexity, and failure modes</p></li>
+<li><p>Talk about trade-offs with software filter</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Intro to sensors (ADC)</p>
+<ul class="simple">
+<li><p>5.1 Introduce temperature sensor</p>
+<ul>
+<li><p>What is it used for?</p></li>
+</ul>
+</li>
+<li><p>5.2 Walk through hardware circuit</p></li>
+<li><p>5.3 Walk through software</p></li>
+</ul>
+</li>
+<li><p>More involved ADC</p>
+<ul class="simple">
+<li><p>6.1 Create analog “lock” with multiple potentiometers</p>
+<ul>
+<li><p>Turning the dials to correct range results in printing message</p></li>
+</ul>
+</li>
+<li><p>6.2 Programming becomes more involved</p>
+<ul>
+<li><p>Functions and loops to poll all the ADC’s</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>I2C sensor</p>
+<ul class="simple">
+<li><p>7.1 Demonstration code talking with TOF sensor</p></li>
+<li><p>7.2 Programming DAC to output voltage and change intensity of LED</p></li>
+<li><p>7.3 Briefly talk about communications protocols</p>
+<ul>
+<li><p>ie I2C is kinda like USB</p></li>
+<li><p>The common comms protocols in embedded: i2c, spi, uart,</p></li>
+<li><p>UART is what we are using to talk with the ESP32</p></li>
+</ul>
+</li>
+<li><p>7.4 Put oscilloscope (logic analyzer?) on signal lines to show what’s going on</p></li>
+</ul>
+</li>
+<li><p>SPI flash storage</p>
+<ul class="simple">
+<li><p>8.1 Explain how data is lost on power-off</p></li>
+<li><p>8.2 Demonstrate basic read/write to FLASH</p></li>
+<li><p>8.3 Make program that does something on boot</p>
+<ul>
+<li><p>First independent program</p></li>
+<li><p>Use all previous components</p>
+<ul>
+<li><p>Button press turns on LED that tells the user to input a combo, then press button again to submit</p></li>
+<li><p>Correct user input unlocks access to LED controlled by TOF sensor</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Make a simple PCB that plugs into ESP32 dev kit</p>
+<ul class="simple">
+<li><p>9.1 What is a PCB?  Why do we need it?</p>
+<ul>
+<li><p>We’ve prototyped a design on a breadboard and now it’s time to make it</p></li>
+<li><p>More robust than a breadboard w/ wires and parts sticking out</p></li>
+</ul>
+</li>
+<li><p>9.2 Create a schematic</p></li>
+<li><p>9.3 Create the PCB</p></li>
+<li><p>9.4 Generate gerbers</p></li>
+<li><p>9.5 Upload to PCBway and order</p>
+<ul>
+<li><p>Optional but encouraged</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>While we wait for board to come in let’s cover some programming practices</p>
+<ul class="simple">
+<li><p>10.1 Intro to state machines</p>
+<ul>
+<li><p>Allows us to break problems down into small parts</p></li>
+<li><p>Easily build complex programs with independent logic</p></li>
+</ul>
+</li>
+<li><p>10.2 Create state machine for “magic” LED</p>
+<ul>
+<li><ol class="simple">
+<li><p>Locked</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Unlocked</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>10.3 Create state-machine for lock/unlock logic</p>
+<ul>
+<li><ol class="simple">
+<li><p>Wait for button press</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>User enters some value for each potentiometer</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Wait for button press</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Read ADC’s</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Read code from Flash memory</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Compare codes</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Lock/unlock access to “magic” LED</p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Let’s save the code we’ve been developing</p>
+<ul class="simple">
+<li><p>11.1 Introduction to version control and GIT</p></li>
+<li><p>11.2 Create a repository and upload to Github</p></li>
+</ul>
+</li>
+<li><p>Documenting the design</p>
+<ul class="simple">
+<li><p>13.1 Introduction to <a class="reference external" href="http://draw.io">draw.io</a> for documenting firmware</p></li>
+<li><p>13.2 Intro to Google Slides</p>
+<ul>
+<li><p>Snippets of circuits and associated signals</p></li>
+<li><p>Discussion of trade-offs</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Assume we’ve received PCB by now and we need to test</p>
+<ul>
+<li><p>14.1 Visually inspecting the PCB</p></li>
+<li><p>14.2 Start Google Slides presentation to record inspection</p></li>
+<li><p>14.3 Cautiously testing one part at a time</p>
+<ul>
+<li><ol class="simple">
+<li><p>Don’t plug in dev kit yet, jumper voltage from dev board to 3.3v rail</p></li>
+</ol>
+<ul class="simple">
+<li><p>Measure voltage of rails to make sure there’s no short</p></li>
+</ul>
+</li>
+<li><ol class="simple">
+<li><p>Sweep potentiometers</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Send I2C &amp; SPI commands, confirm chips respond</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>14.4 Collect signals from testing</p>
+<ul class="simple">
+<li><p>Export as CSV’s</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Basic data analysis and presentation</p>
+<ul class="simple">
+<li><p>15.1 Import CSV’s</p></li>
+<li><p>15.2 Plot with Pandas</p></li>
+<li><p>15.3 Look at edges and transients of signal</p>
+<ul>
+<li><p>I2C and SPI signal waveforms look good?</p></li>
 </ul>
 </li>
 </ul>
 </li>
 <li></li>
 </ul>
-<div class="section" id="led-circuit-w-button">
-<h2>1.3 LED circuit w/ button<a class="headerlink" href="#led-circuit-w-button" title="Permalink to this headline">¶</a></h2>
-</div>
+<ul class="simple">
+<li><p>We’d also like the user to have an option to input the code on a key-pad</p>
+<ul>
+<li><p>PCB is already being fabricated though so we have to find another solution</p></li>
+<li><p>12.1 Intro to capacitive touch buttons</p>
+<ul>
+<li><p>Include a little more lesson on capacitors and time constants?</p></li>
+</ul>
+</li>
+<li><p>12.2 Impement solution with polling</p></li>
+<li><p>12.3 Introduction to interrupts?</p></li>
+<li><p>From this point we should give the students the option to use capacitive buttons or physical buttons in their projects</p>
+<ul>
+<li><p>Good way to introduce the concept of design decisions</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Develop situation where series/parallel resistor circuits are needed</p>
+<ul>
+<li><p>parallel:</p></li>
+<li><p>series:</p></li>
+</ul>
+</li>
+<li><p>How to teach more theoretical part of electronics?</p>
+<ul>
+<li><p>Thevenin</p></li>
+<li><p>series/parallel</p>
+<ul>
+<li><p>resistors</p></li>
+<li><p>capacitors</p></li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
 </div>
 
     <script type="text/x-thebe-config">
@@ -352,10 +577,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">Equipment</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../chapter_01/basic_circuits.html" title="next page">
+    <a class='right-next' id="next-link" href="../chapter_01/02_LED_circuit_pot.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Basic Circuits</p>
+        <p class="prev-next-title">LED Circuit Cont.</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

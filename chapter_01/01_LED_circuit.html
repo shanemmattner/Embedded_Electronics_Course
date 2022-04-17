@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ideas for this class: &#8212; Embedded Electronics</title>
+    <title>First circuit: LED’s &#8212; Embedded Electronics</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Notes" href="notes.html" />
-    <link rel="prev" title="LED Circuit Cont." href="../chapter_01/02_LED_circuit_pot.html" />
+    <link rel="next" title="LED Circuit Cont." href="02_LED_circuit_pot.html" />
+    <link rel="prev" title="Outline" href="../preface/outline.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -125,9 +125,14 @@ const thebe_selector_output = ".output, .cell_output"
   Chapter 1
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   First circuit: LED’s
+  </a>
+ </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../chapter_01/02_LED_circuit_pot.html">
+  <a class="reference internal" href="02_LED_circuit_pot.html">
    LED Circuit Cont.
   </a>
  </li>
@@ -137,14 +142,14 @@ const thebe_selector_output = ".output, .cell_output"
   Chapter Extras
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../extra/ideas.html">
    Ideas for this class:
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notes.html">
+  <a class="reference internal" href="../extra/notes.html">
    Notes
   </a>
  </li>
@@ -189,7 +194,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/extra/ideas.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapter_01/01_LED_circuit.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -209,7 +214,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/shanemmattner/embedded_electronics_course/issues/new?title=Issue%20on%20page%20%2Fextra/ideas.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/shanemmattner/embedded_electronics_course/issues/new?title=Issue%20on%20page%20%2Fchapter_01/01_LED_circuit.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -237,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Ideas for this class:</h1>
+                <h1>First circuit: LED’s</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -248,56 +253,48 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="ideas-for-this-class">
-<h1>Ideas for this class:<a class="headerlink" href="#ideas-for-this-class" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="first-circuit-led-s">
+<h1>First circuit: LED’s<a class="headerlink" href="#first-circuit-led-s" title="Permalink to this headline">¶</a></h1>
+<p>The foundation of electronics is <code class="docutils literal notranslate"><span class="pre">circuits</span></code> which are <ins><strong>just a bunch of electronics parts connected with wires</strong></ins>.</p>
+<p>Let’s look at one of the most basic circuits in electronics:  <strong>LED circuit</strong>.  This circuit has <strong>3</strong> electronic parts:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LED</span></code>: emits light when electricity is applied <br/>
+<img alt="led" src="../_images/ch01_led.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Voltage</span> <span class="pre">supply</span></code>:  source of electricity, like a battery</br>
+<img alt="battery" src="../_images/ch01_battery.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Resistor</span></code>: limits the amount of electricity that can flow <br/>
+<img alt="resistor" src="../_images/ch01_resistor.png" /></p></li>
+</ul>
+<p>Take out the following components from your kit:</p>
+<ul class="simple">
+<li><p>Breadboard</p></li>
+<li><p>Red LED</p></li>
+<li><p>Resistor with these color bands</p>
 <ul>
-<li><p>TOF sensor as a novel “button” or input</p></li>
-<li><p>System that will take some action based on a light sensor?  Put it by a window and do something</p></li>
-<li><p>Teach initial programming with micro-Python</p>
-<ul class="simple">
-<li><p>Move to C based programming after students are comfortable with electronics</p></li>
+<li><p><strong>TODO</strong> picture of resistor to use</p></li>
 </ul>
 </li>
-<li><p>Use <a class="reference external" href="https://fritzing.org/learning/tutorials/building-circuit">Fritzing</a> to make clean circuits on breadboards that students can follow</p></li>
-<li><p>Paper cutout that labels the pins of the dev board like this:</p>
-<ul class="simple">
-<li><p><img alt="dev_board_cutout" src="../_images/dev_board_overlay.png" /></p></li>
+<li><p>ESP32 dev kit</p></li>
+<li><p>Jumper wires</p></li>
 </ul>
-</li>
-<li><p>Add hover-over vocab words with:</p>
-<ul class="simple">
-<li><p><strong><abbr title="hover-text">text</abbr></strong></p></li>
-</ul>
-</li>
-<li><p>Use ESP32 touch sensor pins as buttons</p>
-<ul class="simple">
-<li><p>Pretty cool</p></li>
-</ul>
-</li>
-<li><p>Flash cards using Anki-droid</p></li>
-<li><p>We should do a bunch of mini classes</p>
-<ul>
-<li><ol class="simple">
-<li><p>Basics of electronics, embedded, projects, state machines, and data</p></li>
-</ol>
-<ul class="simple">
-<li><p>Potentiometer lock board with “magic” dimming LED based on TOF sensor</p></li>
-</ul>
-</li>
-<li><ol class="simple">
-<li><p>Class 2</p></li>
-</ol>
-<ul class="simple">
-<li><p>Start logging data in FLASH memory</p>
-<ul>
-<li><p>When button presses happen</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Put the ESP32 pins into the breadboard like this:
+<strong>TODO</strong> add image of esp32 in breadboard</p>
+<p>Then put the LED in the breadboard:
+<strong>TODO</strong> picture of LED in breadboard</p>
+<p>Now add the resistor to the breadboard:
+<strong>TODO</strong> picture of resistor in breadboard</p>
+<p>Finally, attach jumper wires.  After placing all the wires you should see the LED light up!
+<strong>TODO</strong> add picture of full circuit with LED on</p>
+<p>Congratulations on making your first circuit!</p>
+<p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
+<strong>HIDDEN TAB that student clicks on after doing experiment</strong>
+LED’s are part of a family of electronic parts called <code class="docutils literal notranslate"><span class="pre">diodes</span></code> which only allow electricity to flow in one direction.  They will be very useful for various applications.
+<strong>TODO</strong> picture of LED off</p>
+<p>Let’s try another experiemnt and replace the resistor. Take out this resistor from your parts:
+<strong>TODO</strong> picture of new resistor</p>
+<p>Replace the resistor in the breadboard with the new one.  It doesn’t matter which wire leg goes where:
+<strong>TODO</strong> picture of complete circuit</p>
+<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more <strong><abbr title="Opposing the flow of electricity">resistance</abbr></strong></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -313,7 +310,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./extra"
+            path: "./chapter_01"
         },
         predefinedOutput: true
     }
@@ -325,17 +322,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../chapter_01/02_LED_circuit_pot.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../preface/outline.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">LED Circuit Cont.</p>
+            <p class="prev-next-title">Outline</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="notes.html" title="next page">
+    <a class='right-next' id="next-link" href="02_LED_circuit_pot.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notes</p>
+        <p class="prev-next-title">LED Circuit Cont.</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

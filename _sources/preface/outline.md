@@ -6,8 +6,7 @@
     - Introduction to resistors
   - 1.2 LED circuit w/ potentiometer
     - Introduction to pot. and changing values
-  - 1.3 LED circuit w/ button
-    - 
+    - Notice how below a certain level the LED cuts out
 - Basic programming
   - 2.1 Blinky with micro-python
     - Explain GPIO and time
@@ -15,5 +14,113 @@
     - Explain why we want a heartbeat
   - 2.3 ADC on LED circuit w/ potentiometer
     - Monitor voltage out of potentiometer
-    - Notice how below a certain level the LED cuts out
+- More electronics
+  - 3.1 LED circuit + button show bounce of signal
+    - Talk about noise when things turn on and off
+  - 3.2 Add capacitor to circuit
+    - Show how capacitor changes results on the scope
+  - 3.3 Change capacitor to demonstrate the time constant chane
+- Programming IO
+  - 4.1 Make simple program
+    - User button press toggles LED on/off
+  - 4.2 Remove capacitor and demonstrate how LED changes to unexpected state
+  - 4.3 Create basic digital debounce filter
+  - 4.4 Compare digital vs hardware filter
+    - Talk about how adding hardware components adds cost, complexity, and failure modes
+    - Talk about trade-offs with software filter
+- Intro to sensors (ADC)
+  - 5.1 Introduce temperature sensor
+    - What is it used for?  
+  - 5.2 Walk through hardware circuit
+  - 5.3 Walk through software
+- More involved ADC
+  - 6.1 Create analog "lock" with multiple potentiometers
+    - Turning the dials to correct range results in printing message
+  - 6.2 Programming becomes more involved
+    - Functions and loops to poll all the ADC's
+- I2C sensor
+  - 7.1 Demonstration code talking with TOF sensor
+  - 7.2 Programming DAC to output voltage and change intensity of LED
+  - 7.3 Briefly talk about communications protocols
+    - ie I2C is kinda like USB
+    - The common comms protocols in embedded: i2c, spi, uart, 
+    - UART is what we are using to talk with the ESP32
+  - 7.4 Put oscilloscope (logic analyzer?) on signal lines to show what's going on
+- SPI flash storage
+  - 8.1 Explain how data is lost on power-off
+  - 8.2 Demonstrate basic read/write to FLASH
+  - 8.3 Make program that does something on boot
+    - First independent program
+    - Use all previous components
+      - Button press turns on LED that tells the user to input a combo, then press button again to submit
+      - Correct user input unlocks access to LED controlled by TOF sensor
+- Make a simple PCB that plugs into ESP32 dev kit
+  - 9.1 What is a PCB?  Why do we need it?
+    - We've prototyped a design on a breadboard and now it's time to make it
+    - More robust than a breadboard w/ wires and parts sticking out
+  - 9.2 Create a schematic
+  - 9.3 Create the PCB
+  - 9.4 Generate gerbers
+  - 9.5 Upload to PCBway and order
+    - Optional but encouraged
+- While we wait for board to come in let's cover some programming practices
+  - 10.1 Intro to state machines
+    - Allows us to break problems down into small parts
+    - Easily build complex programs with independent logic
+  - 10.2 Create state machine for "magic" LED
+    - 1. Locked
+    - 2. Unlocked
+  - 10.3 Create state-machine for lock/unlock logic
+    - 1. Wait for button press
+    - 2. User enters some value for each potentiometer
+    - 3. Wait for button press
+    - 4. Read ADC's
+    - 5. Read code from Flash memory
+    - 6. Compare codes
+    - 7. Lock/unlock access to "magic" LED
+- Let's save the code we've been developing
+  - 11.1 Introduction to version control and GIT
+  - 11.2 Create a repository and upload to Github
+
+- Documenting the design
+  - 13.1 Introduction to draw.io for documenting firmware
+  - 13.2 Intro to Google Slides
+    - Snippets of circuits and associated signals
+    - Discussion of trade-offs
+- Assume we've received PCB by now and we need to test
+  - 14.1 Visually inspecting the PCB
+  - 14.2 Start Google Slides presentation to record inspection
+  - 14.3 Cautiously testing one part at a time
+    - 1. Don't plug in dev kit yet, jumper voltage from dev board to 3.3v rail
+      - Measure voltage of rails to make sure there's no short
+    - 2. Sweep potentiometers
+    - 3. Send I2C & SPI commands, confirm chips respond
+  - 14.4 Collect signals from testing
+    - Export as CSV's
+- Basic data analysis and presentation
+  - 15.1 Import CSV's
+  - 15.2 Plot with Pandas
+  - 15.3 Look at edges and transients of signal
+    - I2C and SPI signal waveforms look good?
 - 
+
+
+
+
+- We'd also like the user to have an option to input the code on a key-pad
+  - PCB is already being fabricated though so we have to find another solution
+  - 12.1 Intro to capacitive touch buttons
+    - Include a little more lesson on capacitors and time constants?
+  - 12.2 Impement solution with polling
+  - 12.3 Introduction to interrupts?
+  - From this point we should give the students the option to use capacitive buttons or physical buttons in their projects
+    - Good way to introduce the concept of design decisions
+- Develop situation where series/parallel resistor circuits are needed
+  - parallel:
+  - series: 
+- How to teach more theoretical part of electronics?
+  - Thevenin
+  - series/parallel
+    - resistors
+    - capacitors
+  - 
