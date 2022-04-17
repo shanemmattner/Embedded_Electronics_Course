@@ -33,4 +33,6 @@ Let's walk through this program:
    3. Turn **off** the LED by setting it's value to 0
    4. Wait for another 0.5 seconds by `sleeping`
 
-#esp32 #blinky #micro_python #library #object #output
+Having a LED periodically blink is called a `heartbeat` and helps tell us what the ESP32 is still functioning.  If we include a `heartbeat` in our program and the LED stops blinking then we know there was a serious problem with our program.
+
+#esp32 #blinky #micro_python #library #object #output #heartbeat

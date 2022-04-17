@@ -13,8 +13,6 @@
     - Explain GPIO and time
   - 2.2 Heartbeat
     - Explain why we want a heartbeat
-  - 2.3 ADC on LED circuit w/ potentiometer
-    - Monitor voltage out of potentiometer
 - More electronics
   - 3.1 LED circuit + button show bounce of signal
     - Talk about noise when things turn on and off
