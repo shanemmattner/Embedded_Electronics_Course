@@ -4,6 +4,7 @@ Let's start on our programming journey by using the `ESP32` to make the LED turn
 
 
 **TODO** instructions on getting `Micro Python` set up on the ESP32.
+[Install Micro Pyton on ESP32](https://randomnerdtutorials.com/flash-upload-micropython-firmware-esp32-esp8266/)
 
 Now, connect the the circuit as seen below
 **TODO picture of circuit**
