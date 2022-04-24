@@ -4,11 +4,23 @@ Electronics are made up of `circuits` which are <ins>**just a bunch of electroni
 
 Let's build our first circuit:  an **LED circuit**.  This circuit has **4** components.  Take out component kit **01** that includes:
 
-- `Breadboard`: Used for prototyping electronics circuits
+- `Breadboard`: Used for prototyping electronics circuits.  Each hole in the short horizontal rows are connected together.  Each hole in the long vertical rows (<span style="color:blue">**blue**</span> and <span style="color:red">**red**</span>) are connected together.
 
-<img src="../images/ch01/breadboard.png" width = 80%>
 
-<img src="../images/ch01/breadboard_connections.png" width = 80%>
+```{image} ../images/ch01/breadboard.png
+:alt: breadboard
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
+```{image} ../images/ch01/breadboard_connections.png
+:alt: breadboard connections
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
 
 - `LED`: emits light when electricity flows through it <br/>
 ![led](../images/ch01/led.png)

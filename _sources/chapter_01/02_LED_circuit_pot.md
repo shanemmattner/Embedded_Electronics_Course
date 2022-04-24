@@ -18,7 +18,7 @@ Notice how the brightness of the LED changes as you turn the `potentiometer`.
 
 ### Part 2
 
-Let's use the `multimeter` function of the Espotek Labador to understand what's going on.  A `multimeter` is an instrument that measures electrical properties.  
+Open the `Labador Espotek` software 
 
 **video of hooking up the scope and starting up the software**
 
