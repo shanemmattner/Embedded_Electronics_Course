@@ -10,16 +10,15 @@ Let's build our first circuit:  an **LED circuit**.  This circuit has **4** comp
 ```{image} ../images/ch01/breadboard.png
 :alt: breadboard
 :class: bg-primary mb-1
-:width: 200px
-:height: 200px
+:width: 300px
+:height: 300px
 :align: center
-```
-
+``` 
 ```{image} ../images/ch01/breadboard_connections.png
 :alt: breadboard connections
 :class: bg-primary mb-1
-:width: 200px
-:height: 200px
+:width: 300px
+:height: 300px
 :align: center
 ```
 
