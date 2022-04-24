@@ -21,3 +21,6 @@
       - When button presses happen
 - Package electronics seperately for all the labs
   - Super tedious to look through resistors for the right one
+- Here's a bunch of projects for ESP32 with micropython
+  - https://randomnerdtutorials.com/projects-esp32-esp8266-micropython/
+  - How long do we keep doing micro python?

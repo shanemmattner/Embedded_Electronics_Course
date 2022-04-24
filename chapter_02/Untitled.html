@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESP32_heatbeat &#8212; Embedded Electronics</title>
+    <title>&lt;no title&gt; &#8212; Embedded Electronics</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Button" href="04_Button.html" />
-    <link rel="prev" title="1.2 LED Circuit Cont." href="../chapter_01/02_LED_circuit_cont.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -142,9 +140,9 @@ const thebe_selector_output = ".output, .cell_output"
   Chapter 2 - ESP32
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_ESP32_intro.html">
    ESP32_heatbeat
   </a>
  </li>
@@ -211,9 +209,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/chapter_02/03_ESP32_intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapter_02/Untitled.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -231,7 +229,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/shanemmattner/embedded_electronics_course/issues/new?title=Issue%20on%20page%20%2Fchapter_02/03_ESP32_intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/shanemmattner/embedded_electronics_course/issues/new?title=Issue%20on%20page%20%2Fchapter_02/Untitled.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -247,11 +245,41 @@ const thebe_selector_output = ".output, .cell_output"
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/shanemmattner/embedded_electronics_course/main?urlpath=tree/Embedded_Electronics/chapter_02/Untitled.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/shanemmattner/embedded_electronics_course/blob/main/Embedded_Electronics/chapter_02/Untitled.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -259,26 +287,28 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>ESP32_heatbeat</h1>
+                <h1><no title></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="esp32-heatbeat">
-<h1>ESP32_heatbeat<a class="headerlink" href="#esp32-heatbeat" title="Permalink to this headline">¶</a></h1>
-<p>Let’s start on our programming journey by using the <code class="docutils literal notranslate"><span class="pre">ESP32</span></code> to make the LED turn on and off.</p>
-<p><strong>TODO</strong> instructions on getting <code class="docutils literal notranslate"><span class="pre">Micro</span> <span class="pre">Python</span></code> set up on the ESP32.
-<a class="reference external" href="https://randomnerdtutorials.com/flash-upload-micropython-firmware-esp32-esp8266/">Install Micro Pyton on ESP32</a></p>
-<p>Now, connect the the circuit as seen below
-<strong>TODO picture of circuit</strong></p>
-<p>Connect to the ESP32 micropython terminal and paste the code below:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">Timer</span>
 
 <span class="n">led</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
@@ -290,22 +320,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Let’s walk through this program:</p>
-<ol class="simple">
-<li><p>First we import the necessary Python libraries.  <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> are pre-written code that are designed for use in other programs.</p></li>
-<li><p>Next we make a LED <code class="docutils literal notranslate"><span class="pre">object</span></code> and tell MicroPython that Pin 2 should be an <code class="docutils literal notranslate"><span class="pre">output</span></code> type pin.</p></li>
-<li><p>Then we see the <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> code which means the code below it will run forever until the program is stopped.</p></li>
-<li><p>The code running forever has 4 steps:</p>
-<ol class="simple">
-<li><p>Turn <strong>on</strong> the LED by setting it’s value to 1</p></li>
-<li><p>Wait for 0.5 seconds by <code class="docutils literal notranslate"><span class="pre">sleeping</span></code></p></li>
-<li><p>Turn <strong>off</strong> the LED by setting it’s value to 0</p></li>
-<li><p>Wait for another 0.5 seconds by <code class="docutils literal notranslate"><span class="pre">sleeping</span></code></p></li>
-</ol>
-</li>
-</ol>
-<p>Having a LED periodically blink is called a <code class="docutils literal notranslate"><span class="pre">heartbeat</span></code> and helps tell us what the ESP32 is still functioning.  If we include a <code class="docutils literal notranslate"><span class="pre">heartbeat</span></code> in our program and the LED stops blinking then we know there was a serious problem with our program.</p>
-<p>#esp32 #blinky #micro_python #library #object #output #heartbeat</p>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [1],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">time</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">Timer</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">led</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;machine&#39;
+</pre></div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -332,21 +360,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../chapter_01/02_LED_circuit_cont.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">1.2 LED Circuit Cont.</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="04_Button.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Button</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
