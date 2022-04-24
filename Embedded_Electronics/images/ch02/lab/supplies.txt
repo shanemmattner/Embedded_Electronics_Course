@@ -1,0 +1,7 @@
+- breadboard
+- Espotek Labador
+- USB cable
+- Red LED
+- 1k resistor
+- 10k potentiometer
+- small screw driver
