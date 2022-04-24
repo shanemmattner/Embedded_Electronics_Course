@@ -12,14 +12,14 @@ Let's build our first circuit:  an **LED circuit**.  This circuit has **4** comp
 :class: bg-primary mb-1
 :width: 300px
 :height: 300px
-:align: center
+:align: left
 ``` 
 ```{image} ../images/ch01/breadboard_connections.png
 :alt: breadboard connections
 :class: bg-primary mb-1
 :width: 300px
 :height: 300px
-:align: center
+:align: right
 ```
 
 - `LED`: emits light when electricity flows through it <br/>
