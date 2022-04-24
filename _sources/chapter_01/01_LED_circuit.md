@@ -5,8 +5,10 @@ Electronics are made up of `circuits` which are <ins>**just a bunch of electroni
 Let's build our first circuit:  an **LED circuit**.  This circuit has **4** components.  Take out component kit **01** that includes:
 
 - `Breadboard`: Used for prototyping electronics circuits
-<img src="https://github.com/shanemmattner/Embedded_Electronics_Course/blob/main/Embedded_Electronics/images/ch01/breadboard.png" width="200" height="200" >
-<img src="https://github.com/shanemmattner/Embedded_Electronics_Course/blob/main/Embedded_Electronics/images/ch01/breadboard_connections.png" width="200" height="200" >
+
+<img src="../images/ch01/breadboard.png" width = 80%>
+
+<img src="../images/ch01/breadboard_connections.png" width = 80%>
 
 - `LED`: emits light when electricity flows through it <br/>
 ![led](../images/ch01/led.png)
