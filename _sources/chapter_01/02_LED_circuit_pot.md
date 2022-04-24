@@ -18,7 +18,7 @@ Notice how the brightness of the LED changes as you turn the `potentiometer`.
 
 ### Part 2
 
-Open the `Labador Espotek` software 
+Place a jumper in the Open the `Labador Espotek` software, set the  
 
 **video of hooking up the scope and starting up the software**
 

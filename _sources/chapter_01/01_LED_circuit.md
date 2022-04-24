@@ -11,6 +11,7 @@ Let's build our first circuit:  an **LED circuit**.  This circuit has **4** comp
 :alt: breadboard
 :class: bg-primary mb-1
 :width: 200px
+:height: 200px
 :align: center
 ```
 
@@ -18,16 +19,35 @@ Let's build our first circuit:  an **LED circuit**.  This circuit has **4** comp
 :alt: breadboard connections
 :class: bg-primary mb-1
 :width: 200px
+:height: 200px
 :align: center
 ```
 
-
 - `LED`: emits light when electricity flows through it <br/>
-![led](../images/ch01/led.png)
+```{image} ../images/ch01/led.png
+:alt: led
+:class: bg-primary mb-1
+:width: 200px
+:height: 200px
+:align: center
+```
+
 - `Resistors`: limit the amount of electricity that can flow <br/>
-![resistor](../images/ch01/resistors.png)
+```{image} ../images/ch01/resistors.png
+:alt: resistor
+:class: bg-primary mb-1
+:width: 200px
+:height: 200px
+:align: center
+```
 - `Espotek Labador`: We will use this as a source of power for the circuit
-![Espotek Labador](../images/ch01/espotek_labador.png)
+```{image} ../images/ch01/espotek_labador.png
+:alt: Espotek Labador
+:class: bg-primary mb-1
+:width: 200px
+:height: 200px
+:align: center
+```
 
 ## Lab
 ### Step 1
