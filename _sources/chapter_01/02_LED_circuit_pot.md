@@ -8,6 +8,7 @@ We saw how changing the resistor resulted in a different brightness of LED.  Now
 ### Part 1
 
 Replace the <span style="color:brown">**brown**</span> resistor with the <span style="color:blue">**blue**</span> resistor.  Then add the `variable resistor` into the circuit.  The blue resistor leg goes into the row with the top pin of the `variable resistor` and the LED leg goes into the row with the middle pin 
+![variable resistor](../images/ch02/variable_resistor.png)
 ![variable resistor](../images/ch02/lab/p1.png)
 
 Notice how the brightness of the LED changes as you turn the `potentiometer`.
