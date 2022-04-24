@@ -1,6 +1,8 @@
-# LED Circuit Cont.
+# 1.2 LED Circuit Cont.
 
-We saw how changing the resistor resulted in a different brightness of LED.  Now let's add a `variable resistor` to the circuit.  The `variable resistor` has 3 legs:
+We saw how changing the resistor resulted in a different brightness of LED.  Now let's add a `variable resistor` to the circuit which will allow us to test many different values quickly. </br></br>
+
+The `variable resistor` has 3 legs:
 ![variable resistor](../images/ch02/variable_resistor.png)
 
 ## Lab
@@ -14,7 +16,9 @@ Replace the <span style="color:brown">**brown**</span> resistor with the <span s
 Notice how the brightness of the LED changes as you turn the `potentiometer`.
 ![dimmer](../images/ch02/dimmer.gif)
 
-Let's use our `oscilloscope` to understand what's going on.  An `oscilloscope` takes electrical measurements over time and continuously displays them.
+### Part 2
+
+Let's use the `multimeter` function of the Espotek Labador to understand what's going on.  A `multimeter` is an instrument that measures electrical properties.  
 
 **video of hooking up the scope and starting up the software**
 
