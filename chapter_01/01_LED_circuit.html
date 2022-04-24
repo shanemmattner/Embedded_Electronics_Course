@@ -245,6 +245,56 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab">
+   Lab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1">
+     Step 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2">
+     Step 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3">
+     Step 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4">
+     Step 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-5">
+     Step 5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-6">
+     Step 6
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -257,6 +307,56 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab">
+   Lab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1">
+     Step 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2">
+     Step 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3">
+     Step 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4">
+     Step 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-5">
+     Step 5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-6">
+     Step 6
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -266,54 +366,68 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="first-circuit-led-s">
 <h1>1.1 First circuit: LED’s<a class="headerlink" href="#first-circuit-led-s" title="Permalink to this headline">¶</a></h1>
 <p>Electronics are made up of <code class="docutils literal notranslate"><span class="pre">circuits</span></code> which are <ins><strong>just a bunch of electronics parts connected with wires</strong></ins>.</p>
-<p>Let’s build our first circuit:  an <strong>LED circuit</strong>.  This circuit has <strong>5</strong> components:</p>
+<p>Let’s build our first circuit:  an <strong>LED circuit</strong>.  This circuit has <strong>4</strong> components.  Take out component kit <strong>01</strong> that includes:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Voltage</span> <span class="pre">supply</span></code>:  source of electricity, like a battery</br>
-<img alt="battery" src="../_images/ch01_battery.png" />
--<code class="docutils literal notranslate"><span class="pre">Jumper</span> <span class="pre">wires</span></code>: connect the electronic parts
-<img alt="jumper wires" src="images/ch01_jumpers.png" /></p></li>
-</ul>
-<p>Take out component kit <strong>01</strong> that includes:</p>
-<ul class="simple">
-<li><p>2 x Breadboards
-<img alt="breadboard" src="../_images/ch01_breadboard.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Breadboard</span></code>: Used for prototyping electronics circuits
+<img alt="breadboard" src="../_images/breadboard.png" /></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LED</span></code>: emits light when electricity flows through it <br/>
-<img alt="led" src="../_images/ch01_led.png" /></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Resistor</span></code>: limits the amount of electricity that can flow <br/>
-<img alt="resistor" src="../_images/ch01_resistor.png" /></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ESP32</span> <span class="pre">development</span> <span class="pre">kit</span></code>: We will use the ESP32 for a source of electricity to power the LED.  Later this part will do much much more
-<img alt="esp32" src="../_images/ch01_esp32_dev_kit.png" />
--<code class="docutils literal notranslate"><span class="pre">Jumper</span> <span class="pre">wires</span></code>: connect the electronic parts
-<img alt="jumpers" src="../_images/ch01_jumper.png" /></p></li>
+<img alt="led" src="../_images/led.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Resistors</span></code>: limit the amount of electricity that can flow <br/>
+<img alt="resistor" src="../_images/resistors.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Espotek</span> <span class="pre">Labador</span></code>: We will use this as a source of power for the circuit
+<img alt="Espotek Labador" src="../_images/espotek_labador.png" /></p></li>
 </ul>
-<ol class="simple">
-<li><p>Put the ESP32 dev kit into the breadboards:
-<img alt="esp32" src="../_images/ch01_esp32_dev_kit.png" /></p></li>
-<li><p>Plug in the USB cable from the ESP32 to your computer and you should see LED’s on the board turn on.
-<img alt="plugged in" src="../_images/ch01_lab_02.png" /></p></li>
-<li><p>Insert one leg of a jumper into the <strong>3v3</strong> row the ESP32 is connected to.  Insert the other leg of the jumper in the top row of the breadboard:</p></li>
-<li><p>Insert one leg of the resistor into the same row as the jumper, and the other resistor leg goes to the row directly across the divit:
-<img alt="resistor position" src="../_images/ch01_lab_04.png" /></p></li>
-<li><p>Insert the <strong>long</strong> leg of the LED into the same row as the resistor.  The other LED leg can go into a row below:</p></li>
-</ol>
-<p><img alt="led position" src="../_images/ch01_lab_05.png" /></p>
-<ol class="simple">
-<li><p>Take the 2nd jumper and insert one leg to the row with LED, and the other leg goes to <strong>GND</strong> row of the ESP32.  You should see the LED light up!</p></li>
-</ol>
-<p><img alt="complete circuit!" src="../_images/ch01_lab_06.png" /></p>
+<div class="section" id="lab">
+<h2>Lab<a class="headerlink" href="#lab" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1">
+<h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
+<p>Plug the Espotek Labador into the breadboard so that the 2 pins go into the <strong>red</strong> and <strong>blue</strong> rows:
+<img alt="back of espotek" src="../_images/espotek_back.png" />
+<img alt="insert espotek" src="../_images/espotek_insertion.png" />
+<img alt="attached to bb" src="../_images/p1.png" /></p>
+</div>
+<div class="section" id="step-2">
+<h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
+<p>Plug in the USB cable from the Labador to your computer and you should see LED’s on the board turn on.
+<img alt="plugged in" src="../_images/p2.png" /></p>
+</div>
+<div class="section" id="step-3">
+<h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<p>Insert one leg of the <span style="color:blue"><strong>blue</strong></span> resistor into the  <span style="color:red"><strong>red</strong></span> column of the breadboard.  Insert the other leg of the resistor into any row:
+<img alt="resistor position" src="../_images/p3.png" /></p>
+</div>
+<div class="section" id="step-4">
+<h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
+<p>Insert the <strong>long</strong> leg of the LED into the same row as the resistor.  The other LED leg goes to the <span style="color:blue"><strong>blue</strong></span> column of the breadboard:</p>
+<p><img alt="led position" src="../_images/p4.png" /></p>
 <p>Congratulations on making your first circuit!</p>
-<ol class="simple">
-<li><p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
-<strong>HIDDEN TAB that student clicks on after doing experiment</strong>
-LED’s are part of a family of electronic parts called <code class="docutils literal notranslate"><span class="pre">diodes</span></code> which only allow electricity to flow in one direction.  They will be very useful for various applications.
-<img alt="led reversed" src="../_images/ch01_lab_07.png" /></p></li>
-<li><p>Let’s try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct.  Take out this resistor from your parts:
-<img alt="new resistor" src="../_images/ch01_lab_08_resistor.png" /></p></li>
-</ol>
-<p>Replace the resistor in the breadboard with the new one.  It doesn’t matter which wire leg goes where:
-<img alt="dimmer circuit" src="../_images/ch01_lab_08.png" /></p>
-<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the 2nd resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more <strong><abbr title="Opposing the flow of electricity">resistance</abbr></strong></p>
-<p>#led #voltage_supply #resistor #esp32 #breadboard #jumper_wires #usb_cable #led_polarity</p>
+</div>
+<div class="section" id="step-5">
+<h3>Step 5<a class="headerlink" href="#step-5" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens…</p>
+<details class="sphinx-bs dropdown card mb-3 shadow">
+<summary class="summary-title card-header bg-primary text-white font-weight-bold">
+See result<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><img alt="led reversed" src="../_images/p5.png" /></p>
+<p class="card-text">LED’s are part of a family of electronic parts called <code class="docutils literal notranslate"><span class="pre">diodes</span></code> which only allow electricity to flow in one direction.  They will be very useful for various applications.</p>
+</div>
+</details></div>
+<div class="section" id="step-6">
+<h3>Step 6<a class="headerlink" href="#step-6" title="Permalink to this headline">¶</a></h3>
+<p>Let’s try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct. Replace the blue resistor in the breadboard with the new one.  It doesn’t matter which wire leg goes where:
+<img alt="dimmer circuit" src="../_images/p6.png" /></p>
+<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the 2nd resistor is letting less electricity flow from the voltage source through the LED.</p>
+</div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>In this chapter we made an LED circuit and explored how the direction of the LED matters as well as the value of the resistor.  Next chapter we will use the Espotek to further explore this circuit.</p>
+<p>#led #voltage_supply #resistor #resistance #espotek_labador #breadboard #usb_cable #led_polarity</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

@@ -2,63 +2,57 @@
 
 Electronics are made up of `circuits` which are <ins>**just a bunch of electronics parts connected with wires**</ins>.
 
-Let's build our first circuit:  an **LED circuit**.  This circuit has **5** components:
-
-- `Voltage supply`:  source of electricity, like a battery</br>
-![battery](../images/ch01_battery.png)
--`Jumper wires`: connect the electronic parts
-![jumper wires](../images/ch01_jumpers.png)
-
-
-Take out component kit **01** that includes:
-- 2 x Breadboards
-![breadboard](../images/ch01_breadboard.png)
+Let's build our first circuit:  an **LED circuit**.  This circuit has **4** components.  Take out component kit **01** that includes:
+- `Breadboard`: Used for prototyping electronics circuits
+![breadboard](../images/ch01/breadboard.png)
 - `LED`: emits light when electricity flows through it <br/>
-![led](../images/ch01_led.png)
-- `Resistor`: limits the amount of electricity that can flow <br/>
-![resistor](../images/ch01_resistor.png)
-- `ESP32 development kit`: We will use the ESP32 for a source of electricity to power the LED.  Later this part will do much much more
-![esp32](../images/ch01_esp32_dev_kit.png)
--`Jumper wires`: connect the electronic parts
-![jumpers](../images/ch01_jumper.png)
+![led](../images/ch01/led.png)
+- `Resistors`: limit the amount of electricity that can flow <br/>
+![resistor](../images/ch01/resistors.png)
+- `Espotek Labador`: We will use this as a source of power for the circuit
+![Espotek Labador](../images/ch01/espotek_labador.png)
 
-1. Put the ESP32 dev kit into the breadboards:
-![esp32](../images/ch01_esp32_dev_kit.png)
+## Lab
+### Step 1
+Plug the Espotek Labador into the breadboard so that the 2 pins go into the **red** and **blue** rows:
+![back of espotek](../images/ch01/lab/espotek_back.png)
+![insert espotek](../images/ch01/lab/espotek_insertion.png)
+![attached to bb](../images/ch01/lab/p1.png)
 
-2. Plug in the USB cable from the ESP32 to your computer and you should see LED's on the board turn on.
-![plugged in](../images/ch01_lab_02.png)
+### Step 2
+Plug in the USB cable from the Labador to your computer and you should see LED's on the board turn on.
+![plugged in](../images/ch01/lab/p2.png)
 
-3. Insert one leg of a jumper into the **3v3** row the ESP32 is connected to.  Insert the other leg of the jumper in the top row of the breadboard:
+### Step 3
+Insert one leg of the <span style="color:blue">**blue**</span> resistor into the  <span style="color:red">**red**</span> column of the breadboard.  Insert the other leg of the resistor into any row:
+![resistor position](../images/ch01/lab/p3.png)
 
+### Step 4
+Insert the **long** leg of the LED into the same row as the resistor.  The other LED leg goes to the <span style="color:blue">**blue**</span> column of the breadboard:
 
-
-4. Insert one leg of the resistor into the same row as the jumper, and the other resistor leg goes to the row directly across the divit:
-![resistor position](../images/ch01_lab_04.png)
-
-5. Insert the **long** leg of the LED into the same row as the resistor.  The other LED leg can go into a row below:
-
-![led position](../images/ch01_lab_05.png)
-
-6. Take the 2nd jumper and insert one leg to the row with LED, and the other leg goes to **GND** row of the ESP32.  You should see the LED light up!
-
-![complete circuit!](../images/ch01_lab_06.png)
+![led position](../images/ch01/lab/p4.png)
 
 Congratulations on making your first circuit!  
 
-7. Now let's do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
-**HIDDEN TAB that student clicks on after doing experiment**
+### Step 5
+Now let's do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens...
+````{dropdown} See result
+    :container: + shadow
+    :title: bg-primary text-white font-weight-bold
+
+![led reversed](../images/ch01/lab/p5.png)
+
 LED's are part of a family of electronic parts called `diodes` which only allow electricity to flow in one direction.  They will be very useful for various applications.
-![led reversed](../images/ch01_lab_07.png)
 
+````
 
+### Step 6
+Let's try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct. Replace the blue resistor in the breadboard with the new one.  It doesn't matter which wire leg goes where:
+![dimmer circuit](../images/ch01/lab/p6.png)
 
-8. Let's try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct.  Take out this resistor from your parts:
-![new resistor](../images/ch01_lab_08_resistor.png)
+Notice how the brightness of the LED changes when we replace the resistor.  That's because the 2nd resistor is letting less electricity flow from the voltage source through the LED.
 
-Replace the resistor in the breadboard with the new one.  It doesn't matter which wire leg goes where:
-![dimmer circuit](../images/ch01_lab_08.png)
+## Summary
+In this chapter we made an LED circuit and explored how the direction of the LED matters as well as the value of the resistor.  Next chapter we will use the Espotek to further explore this circuit.
 
-Notice how the brightness of the LED changes when we replace the resistor.  That's because the 2nd resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more **<abbr title="Opposing the flow of electricity">resistance</abbr>**
-
-
-#led #voltage_supply #resistor #esp32 #breadboard #jumper_wires #usb_cable #led_polarity
+#led #voltage_supply #resistor #resistance #espotek_labador #breadboard #usb_cable #led_polarity
