@@ -9,12 +9,17 @@ parts:
   - file: preface/about
   - file: preface/equipment
   - file: preface/outline
-- caption: Chapter 1
+  
+- caption: Chapter 1 - LED
   chapters:
   - file: chapter_01/01_LED_circuit
-  - file: chapter_01/02_LED_circuit_pot
-  - file: chapter_01/03_ESP32_heartbeat
-  - file: chapter_01/04_Button
+  - file: chapter_01/02_LED_circuit_cont
+
+- caption: Chapter 2 - ESP32
+  chapters:
+  - file: chapter_02/03_ESP32_intro
+  - file: chapter_02/04_Button
+  
 - caption: Chapter Extras
   chapters:
   - file: extra/ideas
