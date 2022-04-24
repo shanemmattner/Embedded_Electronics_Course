@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First circuit: LED’s &#8212; Embedded Electronics</title>
+    <title>1.1 First circuit: LED’s &#8212; Embedded Electronics</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -128,7 +128,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   First circuit: LED’s
+   1.1 First circuit: LED’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -139,6 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="03_ESP32_heartbeat.html">
    ESP32_heatbeat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_Button.html">
+   Button
   </a>
  </li>
 </ul>
@@ -247,7 +252,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>First circuit: LED’s</h1>
+                <h1>1.1 First circuit: LED’s</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -259,48 +264,56 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="first-circuit-led-s">
-<h1>First circuit: LED’s<a class="headerlink" href="#first-circuit-led-s" title="Permalink to this headline">¶</a></h1>
-<p>The foundation of electronics is <code class="docutils literal notranslate"><span class="pre">circuits</span></code> which are <ins><strong>just a bunch of electronics parts connected with wires</strong></ins>.</p>
-<p>Let’s look at one of the most basic circuits in electronics:  <strong>LED circuit</strong>.  This circuit has <strong>3</strong> electronic parts:</p>
+<h1>1.1 First circuit: LED’s<a class="headerlink" href="#first-circuit-led-s" title="Permalink to this headline">¶</a></h1>
+<p>Electronics are made up of <code class="docutils literal notranslate"><span class="pre">circuits</span></code> which are <ins><strong>just a bunch of electronics parts connected with wires</strong></ins>.</p>
+<p>Let’s build our first circuit:  an <strong>LED circuit</strong>.  This circuit has <strong>5</strong> components:</p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Voltage</span> <span class="pre">supply</span></code>:  source of electricity, like a battery</br>
+<img alt="battery" src="../_images/ch01_battery.png" />
+-<code class="docutils literal notranslate"><span class="pre">Jumper</span> <span class="pre">wires</span></code>: connect the electronic parts
+<img alt="jumper wires" src="images/ch01_jumpers.png" /></p></li>
+</ul>
+<p>Take out component kit <strong>01</strong> that includes:</p>
+<ul class="simple">
+<li><p>2 x Breadboards
+<img alt="breadboard" src="../_images/ch01_breadboard.png" /></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LED</span></code>: emits light when electricity flows through it <br/>
 <img alt="led" src="../_images/ch01_led.png" /></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Voltage</span> <span class="pre">supply</span></code>:  source of electricity, like a battery</br>
-<img alt="battery" src="../_images/ch01_battery.png" /></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Resistor</span></code>: limits the amount of electricity that can flow <br/>
 <img alt="resistor" src="../_images/ch01_resistor.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ESP32</span> <span class="pre">development</span> <span class="pre">kit</span></code>: We will use the ESP32 for a source of electricity to power the LED.  Later this part will do much much more
+<img alt="esp32" src="../_images/ch01_esp32_dev_kit.png" />
+-<code class="docutils literal notranslate"><span class="pre">Jumper</span> <span class="pre">wires</span></code>: connect the electronic parts
+<img alt="jumpers" src="../_images/ch01_jumper.png" /></p></li>
 </ul>
-<p>Take out the following components from your kit:</p>
-<ul class="simple">
-<li><p>Breadboard</p></li>
-<li><p>Red LED</p></li>
-<li><p>Resistor with these color bands</p>
-<ul>
-<li><p><strong>TODO</strong> picture of resistor to use</p></li>
-</ul>
-</li>
-<li><p>ESP32 dev kit</p></li>
-<li><p>Jumper wires</p></li>
-</ul>
-<p>Put the ESP32 pins into the breadboard like this:
-<strong>TODO</strong> add image of esp32 in breadboard</p>
-<p>Then put the LED in the breadboard:
-<strong>TODO</strong> picture of LED in breadboard</p>
-<p>Now add the resistor to the breadboard:
-<strong>TODO</strong> picture of resistor in breadboard</p>
-<p>Finally, attach jumper wires.  After placing all the wires you should see the LED light up!
-<strong>TODO</strong> add picture of full circuit with LED on</p>
+<ol class="simple">
+<li><p>Put the ESP32 dev kit into the breadboards:
+<img alt="esp32" src="../_images/ch01_esp32_dev_kit.png" /></p></li>
+<li><p>Plug in the USB cable from the ESP32 to your computer and you should see LED’s on the board turn on.
+<img alt="plugged in" src="../_images/ch01_lab_02.png" /></p></li>
+<li><p>Insert one leg of a jumper into the <strong>3v3</strong> row the ESP32 is connected to.  Insert the other leg of the jumper in the top row of the breadboard:</p></li>
+<li><p>Insert one leg of the resistor into the same row as the jumper, and the other resistor leg goes to the row directly across the divit:
+<img alt="resistor position" src="../_images/ch01_lab_04.png" /></p></li>
+<li><p>Insert the <strong>long</strong> leg of the LED into the same row as the resistor.  The other LED leg can go into a row below:</p></li>
+</ol>
+<p><img alt="led position" src="../_images/ch01_lab_05.png" /></p>
+<ol class="simple">
+<li><p>Take the 2nd jumper and insert one leg to the row with LED, and the other leg goes to <strong>GND</strong> row of the ESP32.  You should see the LED light up!</p></li>
+</ol>
+<p><img alt="complete circuit!" src="../_images/ch01_lab_06.png" /></p>
 <p>Congratulations on making your first circuit!</p>
-<p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
+<ol class="simple">
+<li><p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens
 <strong>HIDDEN TAB that student clicks on after doing experiment</strong>
 LED’s are part of a family of electronic parts called <code class="docutils literal notranslate"><span class="pre">diodes</span></code> which only allow electricity to flow in one direction.  They will be very useful for various applications.
-<strong>TODO</strong> picture of LED off</p>
-<p>Let’s try another experiemnt and replace the resistor. Take out this resistor from your parts:
-<strong>TODO</strong> picture of new resistor</p>
+<img alt="led reversed" src="../_images/ch01_lab_07.png" /></p></li>
+<li><p>Let’s try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct.  Take out this resistor from your parts:
+<img alt="new resistor" src="../_images/ch01_lab_08_resistor.png" /></p></li>
+</ol>
 <p>Replace the resistor in the breadboard with the new one.  It doesn’t matter which wire leg goes where:
-<strong>TODO</strong> picture of complete circuit</p>
-<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more <strong><abbr title="Opposing the flow of electricity">resistance</abbr></strong></p>
-<p>#led #voltage_supply #resistor #</p>
+<img alt="dimmer circuit" src="../_images/ch01_lab_08.png" /></p>
+<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the 2nd resistor is letting less electricity flow from the voltage source through the LED.  This new resistor has more <strong><abbr title="Opposing the flow of electricity">resistance</abbr></strong></p>
+<p>#led #voltage_supply #resistor #esp32 #breadboard #jumper_wires #usb_cable #led_polarity</p>
 </div>
 
     <script type="text/x-thebe-config">
