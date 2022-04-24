@@ -1,10 +1,17 @@
 # LED Circuit Cont.
 
-We saw how changing the resistor resulted in a different brightness of LED.  Now let's replace the resistor and add a `variable resistor` (aka `potentiometer`)
+We saw how changing the resistor resulted in a different brightness of LED.  Now let's add a `variable resistor` to the circuit.  The `variable resistor` has 3 legs:
+![variable resistor](../images/ch02/variable_resistor.png)
 
-**TODO picture of breadboard with varistor**
+## Lab
 
-Notice how the brightness of the LED changes as you turn the `potentiometer` and then suddenly turns off.  Why do you think that is?
+### Part 1
+
+Replace the <span style="color:brown">**brown**</span> resistor with the <span style="color:blue">**blue**</span> resistor.  Then add the `variable resistor` into the circuit.  The blue resistor leg goes into the row with the top pin of the `variable resistor` and the LED leg goes into the row with the middle pin 
+![variable resistor](../images/ch02/lab/p1.png)
+
+Notice how the brightness of the LED changes as you turn the `potentiometer`.
+![dimmer](../images/ch02/dimmer.gif)
 
 Let's use our `oscilloscope` to understand what's going on.  An `oscilloscope` takes electrical measurements over time and continuously displays them.
 
