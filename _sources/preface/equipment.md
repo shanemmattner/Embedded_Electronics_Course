@@ -1,8 +1,7 @@
 # Equipment
 Minimal physical equipment is needed for this class
 
-- Laptop
-  - Fedora Linux preferred
+- Computer
 - [EspoTek Labrador Board](https://espotek.com/labrador/product/espotek-labrador-board/)
   - All-in-One electronics lab equipment board
 - Basic Electronics Kit

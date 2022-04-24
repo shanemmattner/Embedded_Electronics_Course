@@ -1,14 +1,8 @@
 # Intro
+This book is a **hands-on and practical** guide through the basics of `electronics` and `embedded systems`.  We'll build a real system and get a professional quality `circuit board` made with your own design.
 
-I love the world of electronics and embedded systems.  This book is my attempt to write down all the lessons I've learned both for myself and to pass on the incredible knowledge I have been gifted.
+First we learn about basic electronics by putting together an `LED circuit`.  Then we'll use `test equipment` to experiment on our LED circuit.
 
-The guiding theory of this book is **hands-on and practical** at all times.  Theory will be taught after we explore the topic and can intuite some of what's going on.  There will be math, but always with a reason and always to do something cool.
+After we get a handle on electronics we'll make the system intelligent by programming a tiny computer called a `micro-controller`.  We'll see how the LED circuit can be used with the `micro-controller` in a useful way.
 
-We'll start by putting some electronic parts together and exploring the basics of electricity.  Then we'll move into making our own circuit boards! From this point on we'll use all the lessons we learn to add to a real circuit board that we will get manufactured!
-
-To make embedded electronics we need special equipment.  For this class I chose the cheapest and most effective multi-tool I could find:  
-
-Then we'll learn about the basics of programming and what an **embedded system** actually is.  Programming `embedded systems` is much different than programming websites, databases, or other types of software.  It's much more practical and (I think) easier to grasp.
-
-After we have a working embedded system we'll try to make that system useful by putting some sensors on it.  We'll measure the temperature and humidity.  We can measure how far our hand is from the circuit board.
-
+Some equipment is required but I chose the cheapest possible.  In the future I plan to sell pre-packaged parts to get started quickly and easily.

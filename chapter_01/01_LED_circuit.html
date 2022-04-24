@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.2 LED Circuit Cont." href="02_LED_circuit_pot.html" />
+    <link rel="next" title="1.2 LED Circuit Cont." href="02_LED_circuit_cont.html" />
     <link rel="prev" title="Outline" href="../preface/outline.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -122,7 +122,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Chapter 1
+  Chapter 1 - LED
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -132,17 +132,24 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="02_LED_circuit_pot.html">
+  <a class="reference internal" href="02_LED_circuit_cont.html">
    1.2 LED Circuit Cont.
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter 2 - ESP32
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="03_ESP32_heartbeat.html">
+  <a class="reference internal" href="../chapter_02/03_ESP32_intro.html">
    ESP32_heatbeat
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="04_Button.html">
+  <a class="reference internal" href="../chapter_02/04_Button.html">
    Button
   </a>
  </li>
@@ -375,43 +382,43 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">LED</span></code>: emits light when electricity flows through it <br/></p></li>
 </ul>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/led.png"><img alt="led" class="bg-primary mb-1 align-center" src="../_images/led.png" style="width: 200px; height: 200px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/led.png"><img alt="led" class="bg-primary mb-1 align-center" src="../_images/led.png" style="width: 100px; height: 200px;" /></a>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Resistors</span></code>: limit the amount of electricity that can flow <br/></p></li>
 </ul>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/resistors.png"><img alt="resistor" class="bg-primary mb-1 align-center" src="../_images/resistors.png" style="width: 200px; height: 200px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/resistors.png"><img alt="resistor" class="bg-primary mb-1 align-center" src="../_images/resistors.png" style="width: 250px; height: 200px;" /></a>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Espotek</span> <span class="pre">Labador</span></code>: We will use this as a source of power for the circuit</p></li>
 </ul>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/espotek_labador.png"><img alt="Espotek Labador" class="bg-primary mb-1 align-center" src="../_images/espotek_labador.png" style="width: 200px; height: 200px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/espotek_labador.png"><img alt="Espotek Labador" class="bg-primary mb-1 align-center" src="../_images/espotek_labador.png" style="width: 300px; height: 200px;" /></a>
 <div class="section" id="lab">
 <h2>Lab<a class="headerlink" href="#lab" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="step-1">
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
-<p>Plug the Espotek Labador into the breadboard so that the 2 pins go into the <strong>red</strong> and <strong>blue</strong> rows:
-<img alt="back of espotek" src="../_images/espotek_back.png" />
-<img alt="insert espotek" src="../_images/espotek_insertion.png" />
-<img alt="attached to bb" src="../_images/p1.png" /></p>
+<p>Plug the Espotek Labador into the breadboard so that the 2 pins go into the <span style="color:red"><strong>red</strong></span> and <span style="color:blue"><strong>blue</strong></span> rows:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/espotek_back.png"><img alt="back of espotek" class="bg-primary mb-1" src="../_images/espotek_back.png" style="width: 300px; height: 300px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/espotek_insertion.png"><img alt="inserting espotek" class="bg-primary mb-1" src="../_images/espotek_insertion.png" style="width: 300px; height: 300px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p1.png"><img alt="attached to breadboard" class="bg-primary mb-1" src="../_images/p1.png" style="width: 300px; height: 300px;" /></a>
 </div>
 <div class="section" id="step-2">
 <h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
-<p>Plug in the USB cable from the Labador to your computer and you should see LED’s on the board turn on.
-<img alt="plugged in" src="../_images/p2.png" /></p>
+<p>Plug in the USB cable from the Labador to your computer and you should see LED’s on the board turn on.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p2.png"><img alt="USB plugged in" class="bg-primary mb-1" src="../_images/p2.png" style="width: 400px; height: 400px;" /></a>
 </div>
 <div class="section" id="step-3">
 <h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
-<p>Insert one leg of the <span style="color:blue"><strong>blue</strong></span> resistor into the  <span style="color:red"><strong>red</strong></span> column of the breadboard.  Insert the other leg of the resistor into any row:
-<img alt="resistor position" src="../_images/p3.png" /></p>
+<p>Insert one leg of the <span style="color:blue"><strong>blue resistor</strong></span> into the <span style="color:red"><strong>red</strong></span> column of the breadboard.  Insert the other leg of the resistor into any row:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p3.png"><img alt="Add resistor" class="bg-primary mb-1" src="../_images/p3.png" style="width: 400px; height: 400px;" /></a>
 </div>
 <div class="section" id="step-4">
 <h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
 <p>Insert the <strong>long</strong> leg of the LED into the same row as the resistor.  The other LED leg goes to the <span style="color:blue"><strong>blue</strong></span> column of the breadboard:</p>
-<p><img alt="led position" src="../_images/p4.png" /></p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p4.png"><img alt="Add led" class="bg-primary mb-1" src="../_images/p4.png" style="width: 400px; height: 400px;" /></a>
 <p>Congratulations on making your first circuit!</p>
 </div>
 <div class="section" id="step-5">
 <h3>Step 5<a class="headerlink" href="#step-5" title="Permalink to this headline">¶</a></h3>
-<p>Now let’s do a little experiment: take the LED out of the breadboard and flip it around.  Notice what happens…</p>
+<p>Now let’s do a little experiment: take the <code class="docutils literal notranslate"><span class="pre">LED</span></code> out of the <code class="docutils literal notranslate"><span class="pre">breadboard</span></code> and flip it around.  Notice what happens…</p>
 <details class="sphinx-bs dropdown card mb-3 shadow">
 <summary class="summary-title card-header bg-primary text-white font-weight-bold">
 See result<div class="summary-down docutils">
@@ -419,20 +426,20 @@ See result<div class="summary-down docutils">
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><img alt="led reversed" src="../_images/p5.png" /></p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p5.png"><img alt="LED reversed" class="bg-primary mb-1" src="../_images/p5.png" style="width: 400px; height: 400px;" /></a>
 <p class="card-text">LED’s are part of a family of electronic parts called <code class="docutils literal notranslate"><span class="pre">diodes</span></code> which only allow electricity to flow in one direction.  They will be very useful for various applications.</p>
 </div>
 </details></div>
 <div class="section" id="step-6">
 <h3>Step 6<a class="headerlink" href="#step-6" title="Permalink to this headline">¶</a></h3>
-<p>Let’s try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct. Replace the blue resistor in the breadboard with the new one.  It doesn’t matter which wire leg goes where:
-<img alt="dimmer circuit" src="../_images/p6.png" /></p>
-<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the 2nd resistor is letting less electricity flow from the voltage source through the LED.</p>
+<p>Let’s try another experiemnt and replace the resistor. Reverse the LED so the circuit is correct. Replace the <span style="color:blue"><strong>blue</strong></span> resistor in the breadboard with the <span style="color:brown"><strong>brown</strong></span> one.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/p6.png"><img alt="Dimmer circuit" class="bg-primary mb-1" src="../_images/p6.png" style="width: 400px; height: 400px;" /></a>
+<p>Notice how the brightness of the LED changes when we replace the resistor.  That’s because the 2nd resistor is letting <strong>less</strong> electricity flow from the voltage source through the LED.</p>
 </div>
 </div>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
-<p>In this chapter we made an LED circuit and explored how the direction of the LED matters as well as the value of the resistor.  Next chapter we will use the Espotek to further explore this circuit.</p>
+<p>In this chapter we made an <code class="docutils literal notranslate"><span class="pre">LED</span> <span class="pre">circuit</span></code> and explored how the direction of the <code class="docutils literal notranslate"><span class="pre">LED</span></code> matters as well as the value of the <code class="docutils literal notranslate"><span class="pre">resistor</span></code>.  Next chapter we will use the <code class="docutils literal notranslate"><span class="pre">Espotek</span> <span class="pre">Labador</span></code> to further explore this circuit.</p>
 <p>#led #voltage_supply #resistor #resistance #espotek_labador #breadboard #usb_cable #led_polarity</p>
 </div>
 </div>
@@ -469,7 +476,7 @@ See result<div class="summary-down docutils">
             <p class="prev-next-title">Outline</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="02_LED_circuit_pot.html" title="next page">
+    <a class='right-next' id="next-link" href="02_LED_circuit_cont.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">1.2 LED Circuit Cont.</p>
