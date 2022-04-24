@@ -1,0 +1,6 @@
+- breadboard
+- Espotek Labador
+- USB cable
+- Red LED
+- 1k resistor
+- 10k resistor
